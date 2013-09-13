@@ -25,6 +25,7 @@ register_deactivation_hook( __FILE__, 'credly_login_deactivate' );
 require_once CREDLY_LOGIN_PATH . 'includes/db.php';
 require_once CREDLY_LOGIN_PATH . 'includes/credly.php';
 require_once CREDLY_LOGIN_PATH . 'includes/login-interface.php';
+require_once CREDLY_LOGIN_PATH . 'widgets/credly-login-sidebar.php';
 
 // Scripts and AJAX object
 wp_enqueue_script( 'credly-login-script', CREDLY_LOGIN_URL . 'assets/js/login.js', array( 'jquery' ) );
@@ -42,10 +43,17 @@ add_action( 'login_footer', 'credly_login_render_modal' );
 add_action( 'wp_ajax_nopriv_credly-login-callback', 'credly_login_callback' );
 add_action( 'wp_ajax_credly-login-callback', 'credly_login_callback' );
 
-// Front end hooks.
-add_action( 'wp_head', 'credly_login_frontend_form_styles' );
-add_action( 'bp_after_sidebar_login_form', 'credly_login_render_form' );
-add_action( 'bp_after_sidebar_login_form', 'credly_login_render_modal' );
+// Buddypress frontend hooks.
+if ( function_exists( 'bp_is_active' ) ) {
+	add_action( 'wp_head', 'credly_login_buddypress_form_styles' );
+	add_action( 'bp_after_sidebar_login_form', 'credly_login_render_form' );
+	add_action( 'bp_after_sidebar_login_form', 'credly_login_render_modal' );
+}
+
+// Register sidebar widget.
+add_action( 'widgets_init', function() {
+	register_widget( 'CredlyLoginSidebar' );
+} );
 
 /**
  * Activate the plugin!

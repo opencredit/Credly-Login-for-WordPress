@@ -37,7 +37,7 @@
 	box-shadow: rgba(0,0,0,0.7) 0 4px 10px -1px;
 	overflow: hidden;
 	padding-bottom: 26px;
-	color: #333;
+
 	background: #FFF;
 	padding: 26px 24px 46px;
 	-webkit-border-radius: 3px;
@@ -127,11 +127,12 @@
 }
 
 /* Button */
-#credly-login-button img {
-	display: none;
+#credly-login-button {
+	height: 30px;
 }
-#credly-login-button span:after {
-	content: 'Credly';
+#credly-login-button img {
+	height: 20px;
+	margin-left: 5px;
 }
 #credly-login-button span {
 	float: left;
@@ -147,7 +148,7 @@
 	background: url('../img/spinner_white.gif');
 	position: absolute;
 	right: 105px;
-	top: 252px;
+	top: 242px;
 }
 #credly-login-loader.active {
 	display: block;
@@ -161,6 +162,7 @@
 #loginform {
 	overflow: hidden;
 	position: relative !important;
+	padding-bottom: 26px;
 }
 #loginform .forgetmenot {
 	clear: both;

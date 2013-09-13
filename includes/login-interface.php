@@ -48,9 +48,20 @@ function credly_login_form_styles() {
 
 /**
  * Load the frontend login form styles in the page head.
+ * These styles are used for the sidebar widget.
  *
  * @since 1.0.0
  */
 function credly_login_frontend_form_styles() {
 	echo '<link rel="stylesheet" type="text/css" href="' . CREDLY_LOGIN_URL . 'assets/css/frontend.css" />';
 }
+
+/**
+ * Load the buddypress frontend login form styles in the page head.
+ *
+ * @since 1.0.0
+ */
+function credly_login_buddypress_form_styles() {
+	echo '<link rel="stylesheet" type="text/css" href="' . CREDLY_LOGIN_URL . 'assets/css/buddypress.css" />';
+}
+
