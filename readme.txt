@@ -4,20 +4,18 @@ Tags: credly, login
 Requires at least: 3.0.1
 Tested up to: 3.6.1
 Stable tag: 1.0.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GNU AGPLv3
+License URI: http://www.gnu.org/licenses/agpl-3.0.html
 
-Log in to a Wordpress site using your Credly account without having to manually create an additional account.
+Log in to a WordPress site using your Credly account without having to manually create an additional account.
 
 == Description ==
 
-Once Credly login is installed, it will create an option to log in to your site through /wp-admin with your
-Credly credentials.
+Once Credly login is installed, it will create an option to log in to your site through /wp-admin with your Credly credentials.
 
-When logging in with Credly Login, a new Wordpress user account will automatically be generated and associated
-with your Credly account for future logins.
+When logging in with Credly Login, a new WordPress user account will automatically be generated and associated with your Credly account for future logins.
 
-Plugin comes with a sidebar widget allowing users to embed a Wordpress/Credly user login form on the frontend of their site.
+Plugin comes with a sidebar widget allowing users to embed a WordPress/Credly user login form on the frontend of their site.
 
 **Automatically integrates with BuddyPress sidebar login.**
 
@@ -28,14 +26,14 @@ Plugin comes with a sidebar widget allowing users to embed a Wordpress/Credly us
 
 == Frequently Asked Questions ==
 
-= What if I already have a Wordpress account? =
+= What if I already have a WordPress account? =
 
-Credly Login will look for a Wordpress user that has your Credly email associated with it. If one is found, your Credly
+Credly Login will look for a WordPress user that has your Credly email associated with it. If one is found, your Credly
 account will then be used to log in with that user account.
 
 = Why don't I have any permissions once I log in? =
 
-New accounts are crated without permissions. They must be set by an Admin after your account has been created.
+New accounts are created without permissions. They must be set by an Admin after your account has been created.
 
 == Screenshots ==
 
