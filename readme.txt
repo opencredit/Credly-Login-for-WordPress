@@ -17,6 +17,8 @@ Credly credentials.
 When logging in with Credly Login, a new Wordpress user account will automatically be generated and associated
 with your Credly account for future logins.
 
+Plugin comes with a sidebar widget allowing users to embed a Wordpress/Credly user login form on the frontend of their site.
+
 **Automatically integrates with BuddyPress sidebar login.**
 
 == Installation ==
