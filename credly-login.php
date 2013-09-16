@@ -51,9 +51,7 @@ if ( function_exists( 'bp_is_active' ) ) {
 }
 
 // Register sidebar widget.
-add_action( 'widgets_init', function() {
-	register_widget( 'CredlyLoginSidebar' );
-} );
+add_action( 'widgets_init', create_function( '', 'return register_widget("CredlyLoginSidebar");' ) );
 
 /**
  * Activate the plugin!
