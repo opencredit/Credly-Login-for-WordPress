@@ -26,7 +26,6 @@ class CredlyLoginSidebar extends WP_Widget
 	 */
 	public function widget( $args, $instance )
 	{
-		credly_login_frontend_form_styles();
 		add_action( 'wp_ajax_nopriv_credly-login-callback', 'credly_login_callback' );
 		add_action( 'wp_ajax_credly-login-callback', 'credly_login_callback' );
 

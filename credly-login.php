@@ -38,6 +38,7 @@ wp_localize_script( 'credly-login-script', 'CredlyLogin', array( 'ajaxurl' => ad
  * @see 	includes/login-interface.php
  */
 add_action( 'login_head', 'credly_login_form_styles' );
+// add_action( 'wp_head', 'credly_login_frontend_form_styles' );
 add_action( 'login_form', 'credly_login_render_form' );
 add_action( 'login_footer', 'credly_login_render_modal' );
 add_action( 'wp_ajax_nopriv_credly-login-callback', 'credly_login_callback' );
@@ -51,7 +52,8 @@ if ( function_exists( 'bp_is_active' ) ) {
 }
 
 // Register sidebar widget.
-add_action( 'widgets_init', create_function( '', 'return register_widget("CredlyLoginSidebar");' ) );
+add_action( 'wp_head', 'credly_login_frontend_form_styles' );
+add_action( 'widgets_init', create_function( '', 'return register_widget( "CredlyLoginSidebar" );' ) );
 
 /**
  * Activate the plugin!
