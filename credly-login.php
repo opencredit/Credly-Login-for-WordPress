@@ -1,14 +1,15 @@
 <?php
 
 /**
- * Plugin Name: Credly Login
- * Plugin URI: http://URI_Of_Page_Describing_Plugin_and_Updates
+ * Plugin Name: Credly Login for WordPress
+ * Plugin URI: hhttp://badgeos.org/downloads
  * Description: Log in to Wordpress with your Credly account.
  * Version: 1.0.0
- * Author: Fuzz Productions
+ * Author: Fuzz Productions for Credly, LLC
  * Author URI: http://fuzzproductions.com
- * Copyright: 2013 Credly LLC
- * License: GPL2
+ * Copyright: 2013 Credly, LLC
+ * License: GNU AGPLv3
+ * License URI: http://www.gnu.org/licenses/agpl-3.0.html
  */
 
 defined( 'WPINC' ) or die( 'No direct file access allowed.' );
