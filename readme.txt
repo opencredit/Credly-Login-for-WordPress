@@ -1,6 +1,6 @@
 === Credly Login ===
 Contributors: credly, lomteslie
-Tags: credly, login
+Tags: credly, login, badgeos, badges, openbadges, BadgeOS, open badges, single sign on, SSO
 Requires at least: 3.0.1
 Tested up to: 3.6.1
 Stable tag: 1.0.0
