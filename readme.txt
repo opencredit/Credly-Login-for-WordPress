@@ -7,21 +7,27 @@ Stable tag: 1.0.0
 License: GNU AGPLv3
 License URI: http://www.gnu.org/licenses/agpl-3.0.html
 
-Log in to a WordPress site using your Credly account without having to manually create an additional account.
+Enable users to log in to your site using their Credly account credentials.
 
 == Description ==
 
-Once Credly login is installed, it will create an option to log in to your site through /wp-admin with your Credly credentials.
+Let your WordPress site users log in using their Credly account, without needing to create a new username for your WordPress site.
 
-When logging in with Credly Login, a new WordPress user account will automatically be generated and associated with your Credly account for future logins.
+Install the “Credly Login for WordPress” plugin, and it will create an option on the standard WordPress log in page to sign in using Credly credentials. When logging in with Credly Login, a new WordPress user account will automatically be generated and associated with the user's Credly account for future logins.
 
-Plugin comes with a sidebar widget allowing users to embed a WordPress/Credly user login form on the frontend of their site.
+The plugin also comes with a sidebar widget that allows users to login on the front-end of your site with either their WordPress or Credly credentials.
+
+If a user already has a WordPress account on your site, the Credly Login plugin will look for a WordPress user that has the same email address associated with their Credly account. If one is found, the Credly account will then be used to log in with that existing user account.
+
+While this is a standalone plugin which will work on any WordPress site, it makes a great companion to [BadgeOS](http://wordpress.org/plugins/badgeos/ "BadgeOS"), which empowers you to issue achievements and badges for a wide range of activity on your site.
+
+Badges earned with BadgeOS can be sent automatically to [Credly](https://credly.com/ "Credly") when earned, where recipients can manage and share them with other lifelong achievements. Single sign on between Credly and WordPress means your site members only need to have and remember one username and password.
 
 **Automatically integrates with BuddyPress sidebar login.**
 
 = License Info =
 
-Credly, LLC licenses BadgeOS to you under the terms of the GNU Affero General Public License, version 3, as published by the Free Software Foundation.
+Credly, LLC licenses the Credly Login for WordPress plugin to you under the terms of the GNU Affero General Public License, version 3, as published by the Free Software Foundation.
 
 There is NO WARRANTY for this software, express or implied, including the implied warranties of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License, version 3, at [http://www.gnu.org/licenses/agpl-3.0.html](http://www.gnu.org/licenses/agpl-3.0.html "License") for more details.
 
