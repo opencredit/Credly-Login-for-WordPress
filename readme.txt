@@ -19,6 +19,12 @@ Plugin comes with a sidebar widget allowing users to embed a WordPress/Credly us
 
 **Automatically integrates with BuddyPress sidebar login.**
 
+= License Info =
+
+Credly, LLC licenses BadgeOS to you under the terms of the GNU Affero General Public License, version 3, as published by the Free Software Foundation.
+
+There is NO WARRANTY for this software, express or implied, including the implied warranties of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License, version 3, at [http://www.gnu.org/licenses/agpl-3.0.html](http://www.gnu.org/licenses/agpl-3.0.html "License") for more details.
+
 == Installation ==
 
 1. Upload `credly-login` to the `/wp-content/plugins/` directory.
