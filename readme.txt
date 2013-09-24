@@ -40,8 +40,7 @@ There is NO WARRANTY for this software, express or implied, including the implie
 
 = What if I already have a WordPress account? =
 
-Credly Login will look for a WordPress user that has your Credly email associated with it. If one is found, your Credly
-account will then be used to log in with that user account.
+Credly Login will look for a WordPress user that has your Credly email associated with it. If one is found, your Credly account will then be used to log in with that user account.
 
 = Why don't I have any permissions once I log in? =
 
