@@ -27,8 +27,10 @@ function credly_login_render_modal()
 				<input type="text" name="credly_email" class="input" />
 				<label for="credly_password">Password</label>
 				<input type="password" name="credly_password" class="input" />
-				<span id="credly-login-loader"></span>
-				<input type="submit" value="Submit" class="button button-primary button-large" />
+				<div class="credly-loader-container">
+					<span id="credly-login-loader"></span>
+					<input type="submit" value="Submit" class="button button-primary button-large" />
+				</div>
 				<p id="credly-login-error"></p>
 				<p class="credly-login-external-link">Not yet a member of Credly? <a href="https://credly.com/#!/create-account" target="_blank">Join now</a> (it\'s free).</p>
 				<p class="credly-login-external-link"><a href="https://credly.com/#!/reset-password" target="_blank">Forgot password?</a></p>
@@ -55,13 +57,3 @@ function credly_login_form_styles() {
 function credly_login_frontend_form_styles() {
 	echo '<link rel="stylesheet" type="text/css" href="' . CREDLY_LOGIN_URL . 'assets/css/frontend.css" />';
 }
-
-/**
- * Load the buddypress frontend login form styles in the page head.
- *
- * @since 1.0.0
- */
-function credly_login_buddypress_form_styles() {
-	echo '<link rel="stylesheet" type="text/css" href="' . CREDLY_LOGIN_URL . 'assets/css/buddypress.css" />';
-}
-

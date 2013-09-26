@@ -38,7 +38,6 @@ wp_localize_script( 'credly-login-script', 'CredlyLogin', array( 'ajaxurl' => ad
  * @see 	includes/login-interface.php
  */
 add_action( 'login_head', 'credly_login_form_styles' );
-// add_action( 'wp_head', 'credly_login_frontend_form_styles' );
 add_action( 'login_form', 'credly_login_render_form' );
 add_action( 'login_footer', 'credly_login_render_modal' );
 add_action( 'wp_ajax_nopriv_credly-login-callback', 'credly_login_callback' );
@@ -46,7 +45,6 @@ add_action( 'wp_ajax_credly-login-callback', 'credly_login_callback' );
 
 // Buddypress frontend hooks.
 if ( function_exists( 'bp_is_active' ) ) {
-	add_action( 'wp_head', 'credly_login_buddypress_form_styles' );
 	add_action( 'bp_after_sidebar_login_form', 'credly_login_render_form' );
 	add_action( 'bp_after_sidebar_login_form', 'credly_login_render_modal' );
 }
