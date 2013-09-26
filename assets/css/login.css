@@ -84,14 +84,17 @@
 #credly-login-button span {
 	float: left;
 }
+.credly-loader-container {
+	width: 90px;
+	float: right;
+}
 #credly-login-loader {
 	display: none;
 	width: 16px;
 	height: 16px;
 	background: url('../img/spinner_white.gif');
-	position: absolute;
-	right: 105px;
-	top: 242px;
+	float: left;
+	margin-top: 8px;
 }
 #credly-login-loader.active {
 	display: block;

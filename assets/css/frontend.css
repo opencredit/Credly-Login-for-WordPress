@@ -45,7 +45,6 @@
 }
 
 
-
 #credlyform input[type=text],
 #credlyform input[type=password] {
 	color: #555;
@@ -90,10 +89,18 @@
 }
 
 
-
 #credly-login-modal form img {
 	display: block;
 	margin: 0 auto 20px;
+}
+#credly-login-modal input[type=submit] {
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font-weight: normal;
+}
+#credly-login-modal input[type=submit]:hover {
+	font-weight: normal;
+	cursor: pointer;
 }
 #credly-login-error {
 	float: left;
@@ -124,30 +131,59 @@
 }
 #modal-content {
 	background: #fff;
+	font-family: sans-serif;
+	font-size: 12px;
+	line-height: 1.4em;
+	color: #333;
+}
+#modal-content a {
+	color: #21759b !important;
 }
 
 /* Button */
-#credly-login-button img {
-	display: none;
+#credly-login-button {
+	background: #FFF;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#fefefe),to(#f4f4f4));
+	background-image: -webkit-linear-gradient(top,#fefefe,#f4f4f4);
+	background-image: -moz-linear-gradient(top,#fefefe,#f4f4f4);
+	background-image: -o-linear-gradient(top,#fefefe,#f4f4f4);
+	background-image: linear-gradient(to bottom,#fefefe,#f4f4f4);
+	border-color: #bbb;
+	color: #333;
+	text-shadow: 0 1px 0 #fff;
+	cursor: pointer;
+	border-width: 1px;
+	border-style: solid;
+	-webkit-border-radius: 3px;
+	-webkit-appearance: none;
+	border-radius: 3px;
+	white-space: nowrap;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 30px;
+	padding: 4px 12px;
 }
-#credly-login-button span:after {
-	content: 'Credly';
+#credly-login-button img {
+	box-shadow: none;
+	height: 20px;
+	margin-left: 5px;
 }
 #credly-login-button span {
 	float: left;
-	line-height: 1.5;
+	font: normal 12px/20px Arial, Tahoma, Verdana, sans-serif;
 }
-#credly-login-or {
-	margin-top: 15px;
+.credly-loader-container {
+	width: 90px;
+	float: right;
 }
 #credly-login-loader {
 	display: none;
 	width: 16px;
 	height: 16px;
 	background: url('../img/spinner_white.gif');
-	position: absolute;
-	right: 105px;
-	top: 252px;
+	float: left;
+	margin-top: 8px;
 }
 #credly-login-loader.active {
 	display: block;
@@ -155,6 +191,9 @@
 .credly-login-external-link {
 	clear: left;
 	margin-bottom: 0;
+}
+.credly-login-external-link a {
+	color: #21759b !important;
 }
 
 /* Login page overrides */
