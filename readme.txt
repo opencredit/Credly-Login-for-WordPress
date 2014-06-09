@@ -1,5 +1,5 @@
 === Credly Login ===
-Contributors: credly, lomteslie
+Contributors: credly, learningtimes, badgeos, lomteslie
 Tags: credly, login, badgeos, badges, openbadges, BadgeOS, open badges, single sign on, SSO
 Requires at least: 3.0.1
 Tested up to: 3.6.1
